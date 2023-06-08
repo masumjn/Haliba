@@ -1,0 +1,229 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin-top: 50px;
+  padding-bottom: 45%; /* Adjust this value to control the video aspect ratio */
+  
+}
+
+.video-container2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%; /* Adjust this value to control the video aspect ratio */
+  
+}
+
+video {
+  position: absolute;
+  top: 10;
+  left: 5%;
+  width: 45%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.contact-section {
+  padding: 20px;
+  background-color:#C4A484;
+  margin-top: 100px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: 	#80461B;
+  font-size: 24px;
+}
+
+.contact-info p {
+  color: 	#80461B;
+  font-size: 16px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  color:	#80461B;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.to-top{
+  background:#fb9a9a;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #EADDCA;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.to-top.active:hover{
+  background-color:#fb9a9a;
+  color:#EADDCA;
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.right-section {
+  width: 40%;
+  height: 40%;
+}

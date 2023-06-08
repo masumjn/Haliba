@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haliba Bakery</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+      
+          form {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+          }
+      
+          h2 {
+            text-align: center;
+          }
+      
+          label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+      
+          input[type="text"],
+          input[type="email"],
+          input[type="tel"],
+          textarea,
+          select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+          }
+      
+          select {
+            height: 32px;
+          }
+      
+          input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7b3030;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+          }
+      
+          input[type="submit"]:hover {
+            background-color: #7b3030;
+          }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <div class="">
+          <img src="assets/Haliba Logo.png"alt="Haliba"  />
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html">Our Products</a>
+          </li>
+          <li>
+            <a href="index.html">About Us</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+    <form action="#" method="POST" onsubmit="return showSuccessAlert()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required><br><br>
+    
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea><br><br>
+    
+        <label for="kue">Pilih Kue:</label>
+        <select id="kue" name="kue" required>
+          <option value="">-- Pilih Kue --</option>
+          <option value="Marble_Cake">Marble Cake</option>
+          <option value="Nutty_Cake">Nutty Cake</option>
+          <option value="Custom_Cake">Custom Cake</option>
+          <option value="Triple_Choco_Cake">Triple Choco Cake</option>
+          <option value="Kastengel">Kastengel</option>
+          <option value="Nastar">Nastar</option>
+          <option value="Semprit_Mawar">Semprit Mawar</option>
+          <option value="Palm_Cheese">Palm Cheese</option>
+          <option value="Korean_Garlic">Korean Garlic</option>
+          <option value="Red_Velvet_Cookies">Red Velvet Cookies</option>
+        </select><br><br>
+    
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" required><br><br>
+    
+        <label for="tanggal">Tanggal Pemesanan:</label>
+        <input type="date" id="tanggal" name="tanggal" required><br><br>
+    
+        <input type="submit" value="Pesan">
+    </div>
+    <script>
+        function showSuccessAlert() {
+          alert("Pesanan berhasil dilakukan!");
+          return true;
+        }
+      </script>
+  </body>
